@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website</title>
     <link rel="stylesheet" href="style.css">
@@ -16,13 +16,14 @@
         <!-- so the (span) makes you put more properties in the same line but then you can focus on
         that properties style individually in this case it would be the fullstop.-->
         <a href="#" class="logo">Food<span>.</span></a>
+        <div class ="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#expert">Expert</a></li>
-            <li><a href="#testimonials">Testimonial</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about"onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu"onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#expert"onclick="toggleMenu();">Expert</a></li>
+            <li><a href="#testimonials"onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="#contact"onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
     <section class="home" id="home">
@@ -55,7 +56,7 @@
             </div>
             <div class="col50">
                 <div class="imgBx">
-                    <img src="pics/img1.jpg">
+                    <img src="/pics/img1.jpg">
                 </div>
             </div>
         </div>
@@ -202,6 +203,7 @@
                                  <h3>Someone Famous</h3>
                         </div>
                     </div>
+                </div>
             </section>
 
             <section class="contact" id="contact">
@@ -225,7 +227,6 @@
                     </div>
                 </div>
             </section>
-
 </body>
 <!-- This is another method linking your html to your javascript document this is better practice. -->
 <script src="functions.js"></script>
