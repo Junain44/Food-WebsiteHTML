@@ -10,10 +10,10 @@
     font-family:'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
-/* body
+body
 {
     min-height: 1000px;
-} */
+}
 /* This is my background image and the styling for it
  .home is my class so it can link with my html.*/
 .home
@@ -315,7 +315,8 @@ section
 
 /* Styling the testimonial section */
 .testimonials
-{
+{   
+    width: 100%;
     margin-top: 40px;
     background: url(/pics/bg2.jpg);
     background-size: cover;
@@ -446,6 +447,17 @@ section
     cursor: pointer;
 }
 
+.footerText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* Responsiveness for mobile */
 @media (max-width: 991px)
 {
     header,
@@ -578,6 +590,11 @@ section
         margin-top: 30px;
         margin-top: 30px;
     }
-    
-    
-
+    .footerText {
+        padding: 8px 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
